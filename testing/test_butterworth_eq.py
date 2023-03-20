@@ -32,4 +32,4 @@ def test_butterworth_eq(audio_signal):
     # Check that the filtered signal is not equal to the input signal
     assert not np.allclose(filtered_signal, signal)
 
-#run it like this: python -m pytest .\test_butterworth_eq.py 
+#run it like this: python -m pytest .\testing\test_butterworth_eq.py 

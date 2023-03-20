@@ -19,3 +19,5 @@ def test_distortion():
 
     # Check if the output matches the expected output with a certain tolerance
     assert np.allclose(output, expected_output, rtol=1e-5)
+
+#run it like this: python -m pytest .\testing\test_distortion.py

@@ -23,4 +23,4 @@ def test_noisegate():
     # Test the function with a threshold smaller than the input
     assert noisegate(0.5, 0.1) == pytest.approx(0.0, abs=1e-2)
 
-#run it like this: python -m pytest .\test_noisegate.py
+#run it like this: python -m pytest .\testing\test_noisegate.py

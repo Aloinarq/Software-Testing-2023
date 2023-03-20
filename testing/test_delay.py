@@ -16,4 +16,4 @@ def test_delay_functions():
     zero_padding_signal = np.zeros(delay_len_samples)
     delayed_sig = np.concatenate((zero_padding_signal, signal_float64))
 
-#Run it like this: python -m pytest .\test_delay.py
+#Run it like this: python -m pytest .\testing\test_delay.py
