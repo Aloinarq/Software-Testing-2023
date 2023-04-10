@@ -1,4 +1,5 @@
 import numpy as np
+from ..utils.utils import clip
 
 
 class Distortion:
@@ -6,8 +7,5 @@ class Distortion:
         self.gain = gain
 
     def apply(self, data_in: float) -> float:
-        temp = np.sign(data_in) * (1.0 - np.exp(self.gain * np.sign(data_in) * data_in))
-        return self.clip(temp)
-
-    def clip(self, value: float) -> float:
-        return np.clip(value, -1.0, 1.0)
+        applied_distortion = np.sign(data_in) * (1.0 - np.exp(self.gain * np.sign(data_in) * data_in))
+        return clip(applied_distortion)

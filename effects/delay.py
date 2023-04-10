@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Reverb:
+class Delay:
     def __init__(self, fs, duration_sec: float = 0.5, amplitude: float = 0.8):
         self.fs = fs
         self.duration_sec = duration_sec
