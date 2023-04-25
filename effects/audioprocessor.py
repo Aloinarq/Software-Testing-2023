@@ -13,7 +13,8 @@ class AudioProcessor:
         wavfile.write(file_path, self.fs, signal)
 
     def apply_effect_and_save(self, effect_func):
-        effect_name = effect_func.__name__
+        class_name = effect_func.__self__.__class__.__name__
+        effect_name = f"{effect_func.__name__}_{class_name}"
         output_file_name = effect_name.lower() + ".wav"
         signal = effect_func(self.signal_float64) * 2 ** 15
         self.write_output_file(signal.astype('int16'), output_file_name)

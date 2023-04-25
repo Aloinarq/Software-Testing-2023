@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import sys
-from ..utils.utils import clip
+from utils.utils import clip
 
 # Get the path to the directory containing the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))

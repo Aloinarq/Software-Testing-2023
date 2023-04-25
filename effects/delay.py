@@ -7,14 +7,6 @@ class Delay:
         self.duration_sec = duration_sec
         self.amplitude = amplitude
 
-    def apply_basic_delay(self, signal):
-        delay_len_samples = round(self.duration_sec * self.fs)
-        zero_padding_signal = np.zeros(delay_len_samples)
-        delayed_sig = np.concatenate((zero_padding_signal, signal))
-        signal = np.concatenate((signal, zero_padding_signal))
-        summed_sig = (signal + self.amplitude * delayed_sig).astype(np.int16)
-        return summed_sig
-
     def apply_convolutional_delay(self, signal):
         delay_len_samples = round(self.duration_sec * self.fs)
         impulse_response = np.zeros(delay_len_samples)
