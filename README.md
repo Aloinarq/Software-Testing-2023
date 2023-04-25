@@ -10,9 +10,9 @@ In this project, Pytest will be used to test the functionality and performance o
 
 ## Digital Guitar Pedal
 
-The simulated digital guitar pedal will be developed using Python, with a focus on digital signal processing techniques. The pedal will aim to provide a range of high-quality audio effects, such as distortion, delay, reverb and also an EQ. The effects will be designed to be adjustable, with parameters such as gain, time, and feedback, to allow guitarists to customize their sound.
+The simulated digital guitar pedal will be developed using Python, with a focus on digital signal processing techniques. The pedal will aim to provide a range of high-quality audio effects, such as distortion, oerdrive, delay and also an EQ. The effects will be designed to be adjustable, with parameters such as gain, time, and feedback, to allow guitarists to customize their sound.
 
-The development of the guitar pedal will involve a range of techniques, including filtering, convolution, and modulation. The Python libraries Numpy, Scipy, and Matplotlib will be used to implement these techniques, as well as to visualize the results of the tests.
+The development of the guitar pedal will involve a range of techniques, including filtering, convolution, and modulation. The Python libraries Numpy, Scipy, and Pytest will be used to implement these techniques, as well as to visualize the results of the tests.
 
 # Conclusion
 
